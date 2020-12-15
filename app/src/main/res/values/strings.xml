@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DataStore Serialization</string>
+    <string name="my_boolean_value">My boolean value</string>
+    <string name="my_string_value">My string value</string>
+    <string name="my_enum_value">My enum value</string>
+    <string name="save">Save</string>
 </resources>
