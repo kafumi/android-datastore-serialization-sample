@@ -9,7 +9,10 @@ import java.io.OutputStream
 
 @OptIn(ExperimentalSerializationApi::class)
 class MyDataSerializer(
-    private val stringFormat: StringFormat = Json,
+    private val stringFormat: StringFormat = Json {
+        ignoreUnknownKeys = true
+        encodeDefaults = true
+    },
 ) : Serializer<MyData> {
     override val defaultValue: MyData
         get() = MyData()
